@@ -1,0 +1,29 @@
+.heroBanner {
+    background-color: #303030;
+    background-repeat: repeat;
+    background-position: 22% 43%;
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0;
+    padding-top: 72px;
+    color:#fff;
+    text-align: center;
+    height: 100vh;
+    padding: 36vh;
+    h2 {
+        font-size: 60px;
+        line-height: 72px;
+    }
+    p {
+        font-size: 20px;
+        line-height: 24px;
+        margin: 0 0 24px 0;
+        font-weight: 500;
+    }
+} 
