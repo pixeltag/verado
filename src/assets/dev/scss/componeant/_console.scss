@@ -1,46 +1,18 @@
-.btn-chat {
-    position: absolute;
-    right:2em;
-    bottom: 2em; 
-    width:70px;
-    height: 70px;
-    background: $color1;
-    border-radius: 50%;
-    border:0;
-    outline: none;
-    transition: all 0.3s ease-in-out;
-    &:hover  {
-        background: darken($color1 , 10%);
-        transition: all 0.3s ease-in-out;
-    }
-    svg {
-        width: 30px;
-        height: 30px;
-        fill: #fff;
-    }
-}
 
-.chat-warpper {
-    position: absolute;
+
+.console-warpper {
     display: block;
-    bottom: 2em;
-    right: 2em;
-    left: auto;
-    top: auto;
    
 }
-.chat-container {
-    position: absolute;
-    bottom: 8em;
-    right: 1em;
+.console-container {
     background: #ffffff;
-    width: 360px;
     box-shadow: 0 13px 70px -10px #000;
     border-radius: 3px;
-    height: 400px;
+    height: 80vh;
     overflow: hidden;
-    .chat-bar {
-       background:#07eabe;
+    margin-top: 110px;
+    .console-bar {
+       background:#fff;
        display: block;
        width: 100%;
        padding: 0.5em;
@@ -52,7 +24,7 @@
            border:0; 
            float: right;
            svg {
-            fill:#fff;
+            fill:#07eabe;
             width: 15px;
             height: 15px;
            }
@@ -60,12 +32,12 @@
        span {
            font-size: 14px;
        }
-    }
-    .chat-viewer {
+    } 
+    .console-viewer {
         padding: 0.5em;
         background: #fff;
         border-radius: 3px;
-        height: 290px;
+        height: 65vh;
         overflow-y: scroll;
         position: relative;
         ul {
@@ -99,13 +71,13 @@
         font-size: 11px;
         color: #9c9c9c;
         padding: 10px;
-        bottom: 66px;
-        right: 20px;
+        bottom: 113px;
+        
     }
 }
 
-.chat-control {
-    input {
+.console-control {
+    textarea {
         border: 0;
         border-top:1px solid #9c9c9c;
         height: 70px;
@@ -114,21 +86,5 @@
         border: 0;
         font-size: 14px !important;
         border-top: 1px solid #cecece;
-    }
-}
-
-.chat-profile  {
-    padding: 2em;
-    text-align: center;
-    .alert-danger {
-        margin: 1em 0;
-        padding: 10px;
-        font-size: 14px; 
-    }
-    svg {
-        margin: 2em;
-        fill: #ddd;
-        width: 90px;
-        height: 90px;
     }
 }

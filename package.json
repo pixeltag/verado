@@ -27,7 +27,10 @@
     "core-js": "^2.5.4",
     "gulp-cache": "^1.0.2",
     "gulp-cli": "^2.0.1",
+    "ng-socket-io": "^0.2.4",
+    "ngx-socket-io": "^1.1.1",
     "rxjs": "^6.0.0",
+    "socket.io-client": "^2.1.1",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {

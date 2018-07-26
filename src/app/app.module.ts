@@ -1,3 +1,4 @@
+import { ChatService } from './chat/chat.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -10,6 +11,9 @@ import { RouterLink } from '@angular/router';
 import { RouterModule, Routes } from '@angular/router';
 import { ConsoleComponent } from './console/console.component';
 import { HomeComponent } from './home/home.component';
+import { FormsModule }   from '@angular/forms';
+
+
 
 const routes: Routes = [
   {
@@ -31,15 +35,14 @@ const routes: Routes = [
     ChatComponent,
     ConsoleComponent,
     HomeComponent
-  ],
+    ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot( routes, { enableTracing: true } // <-- debugging purposes only
-    )
-    // other imports here
+    FormsModule,
+    RouterModule.forRoot(routes)
   ],
-  providers: [RouterLink],
+  providers: [RouterLink , ChatService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

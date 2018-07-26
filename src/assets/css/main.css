@@ -7460,7 +7460,92 @@ header {
     bottom: 66px;
     right: 20px; }
 
-.chat-control textarea {
+.chat-control input {
+  border: 0;
+  border-top: 1px solid #9c9c9c;
+  height: 70px;
+  border-radius: 0;
+  outline: none;
+  border: 0;
+  font-size: 14px !important;
+  border-top: 1px solid #cecece; }
+
+.chat-profile {
+  padding: 2em;
+  text-align: center; }
+  .chat-profile .alert-danger {
+    margin: 1em 0;
+    padding: 10px;
+    font-size: 14px; }
+  .chat-profile svg {
+    margin: 2em;
+    fill: #ddd;
+    width: 90px;
+    height: 90px; }
+
+.console-warpper {
+  display: block; }
+
+.console-container {
+  background: #ffffff;
+  -webkit-box-shadow: 0 13px 70px -10px #000;
+  box-shadow: 0 13px 70px -10px #000;
+  border-radius: 3px;
+  height: 80vh;
+  overflow: hidden;
+  margin-top: 110px; }
+  .console-container .console-bar {
+    background: #fff;
+    display: block;
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 0em;
+    height: 43px;
+    text-align: center; }
+    .console-container .console-bar button {
+      background: 0;
+      border: 0;
+      float: right; }
+      .console-container .console-bar button svg {
+        fill: #07eabe;
+        width: 15px;
+        height: 15px; }
+    .console-container .console-bar span {
+      font-size: 14px; }
+  .console-container .console-viewer {
+    padding: 0.5em;
+    background: #fff;
+    border-radius: 3px;
+    height: 65vh;
+    overflow-y: scroll;
+    position: relative; }
+    .console-container .console-viewer ul {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      .console-container .console-viewer ul li {
+        padding: 10px;
+        border-radius: 3px;
+        padding: 3px 10px; }
+        .console-container .console-viewer ul li span.author {
+          color: #07eabe;
+          color: #00c7a1;
+          font-size: 12px;
+          font-weight: bold; }
+        .console-container .console-viewer ul li p {
+          margin-bottom: 5px;
+          font-size: 14px; }
+        .console-container .console-viewer ul li:nth-child(odd) {
+          background: #f3f3f3;
+          padding: 3px 10px; }
+  .console-container .typing {
+    position: absolute;
+    font-size: 11px;
+    color: #9c9c9c;
+    padding: 10px;
+    bottom: 113px; }
+
+.console-control textarea {
   border: 0;
   border-top: 1px solid #9c9c9c;
   height: 70px;
